@@ -1,3 +1,0 @@
-/home/thekatze/CLionProjects/shvrdengine-test/cmake-build-debug/googletest-download/CMakeFiles/rebuild_cache.dir
-/home/thekatze/CLionProjects/shvrdengine-test/cmake-build-debug/googletest-download/CMakeFiles/edit_cache.dir
-/home/thekatze/CLionProjects/shvrdengine-test/cmake-build-debug/googletest-download/CMakeFiles/googletest-download.dir

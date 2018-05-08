@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/runUnitTests.dir/gtest.cpp.o CMakeFiles/runUnitTests.dir/test.cpp.o  -o runUnitTests ../googletest-build/googlemock/gtest/libgtestd.a ../googletest-build/googlemock/libgmockd.a ../src/libshvrdengine.a ../googletest-build/googlemock/gtest/libgtestd.a -pthread 
