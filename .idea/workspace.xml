@@ -81,8 +81,8 @@
       <file leaf-file-name="GameContainerTest.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/GameContainerTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#42#68#0" expanded="true" />
               </folding>
@@ -277,12 +277,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525768339762</updated>
       <workItem from="1525768341185" duration="114000" />
-      <workItem from="1525768465508" duration="9696000" />
+      <workItem from="1525768465508" duration="9800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9810000" />
+    <option name="totallyTimeSpent" value="9914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1918" y="-18" width="1924" height="1100" extended-state="6" />
@@ -295,9 +295,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.32937685" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937685" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.27992088" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.27992088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947312" weight="0.32937685" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49947312" visible="true" weight="0.32937685" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -463,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GameContainerTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#42#68#0" expanded="true" />
           </folding>
