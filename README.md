@@ -7,6 +7,9 @@
 A low-level, yet easy to use cross-platform 2d game engine for medium to big game projects.
 Written in c++ with platform independency in mind, this engine offers high performance for visually appealing two-dimensional games for Windows, macOS and Linux.
 
+## Code Status
+[![CodeFactor](https://www.codefactor.io/repository/github/shvrd/shvrdengine/badge/master)](https://www.codefactor.io/repository/github/shvrd/shvrdengine/overview/master)
+
 ## Features
 
 * Cross-platform
