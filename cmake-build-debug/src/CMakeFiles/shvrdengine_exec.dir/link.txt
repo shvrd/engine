@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/shvrdengine_exec.dir/main.cpp.o  -o shvrdengine_exec libshvrdengine.a -lSDL2 -lSDL2_image -lSDL2 /usr/lib/libGL.so /usr/lib/libGLU.so -pthread /usr/lib/libGLEW.so -lSDL2_mixer -lSDL2 -lSDL2_image /usr/lib/libGL.so /usr/lib/libGLU.so /usr/lib/libGLEW.so -lSDL2_mixer 
