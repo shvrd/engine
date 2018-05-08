@@ -70,9 +70,9 @@ public:
 
     ~GameContainer();
 
-    void enterGameState(GameState *newGameState);
+    const void enterGameState(GameState *newGameState);
 
-    void setWindowTitle(std::string title);
+    const void setWindowTitle(std::string title);
 
     void close();
 

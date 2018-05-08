@@ -16,7 +16,7 @@ class BasicGameState : public GameState {
 
     void onLeave() override;
 
-    void update(const int &delta, const Input *input) override;
+    void update(const int &delta, const Input *input, GameContainer *gameContainer) override;
 
     void render(const Graphics *graphics) override;
 };

@@ -18,7 +18,7 @@ void GameContainer::update() {
     input->update(this);
 
     //TODO: Calculate delta
-    currentGameState->update(0, input);
+    currentGameState->update(0, input, this);
 }
 
 /**
@@ -163,7 +163,7 @@ void GameContainer::calculateFPS() {
  * @param newGameState A pointer to the gamestate to enter.
  */
 
-void GameContainer::enterGameState(GameState *newGameState) {
+const void GameContainer::enterGameState(GameState *newGameState) {
     currentGameState->onLeave();
 
     newGameState->onEnter();
@@ -176,7 +176,7 @@ void GameContainer::enterGameState(GameState *newGameState) {
  * @param title The new window title
  */
 
-void GameContainer::setWindowTitle(std::string title) {
+const void GameContainer::setWindowTitle(std::string title) {
     SDL_SetWindowTitle(window, title.c_str());
 }
 

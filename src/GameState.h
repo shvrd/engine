@@ -44,7 +44,7 @@ public:
      * @param delta The time passed since the last frame.
      * @param input The input wrapper, for more documentation consult the documentation of the input class
      */
-    virtual void update(const int &delta, Input const *input) {};
+    virtual void update(const int &delta, Input const *input, GameContainer *gameContainer) {};
 
     /**
      * The function responsible for rendering the game objects.
