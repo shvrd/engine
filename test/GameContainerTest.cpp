@@ -2,7 +2,6 @@
 // Created by thekatze on 8/05/18.
 //
 
-#include <GameContainer.h>
 #include "gtest/gtest.h"
 #include "TestingGameState.h"
 

@@ -14,7 +14,6 @@
  */
 
 void GameContainer::update() {
-
     input->update(this);
 
     //TODO: Calculate delta
@@ -45,7 +44,6 @@ void GameContainer::render() {
 
 GameContainer::GameContainer(GameState *currentGameState)
         : time(0.0f), timeScale(0.01f), maxFPS(60.0f), currentGameState(currentGameState) {
-
     Logger::initialize("log.txt", true);
 
     initializeSystems();
@@ -104,7 +102,6 @@ void GameContainer::gameLoop() {
  */
 
 GameContainer::~GameContainer() {
-
     Logger::info("Shutting down SDL systems");
 
     SDL_DestroyWindow(window);
@@ -112,7 +109,6 @@ GameContainer::~GameContainer() {
     SDL_Quit();
 
     Logger::info("Exiting engine");
-
 }
 
 /**
@@ -155,7 +151,6 @@ void GameContainer::calculateFPS() {
     } else {
         fps = 0;
     }
-
 }
 
 /**
@@ -186,7 +181,6 @@ const void GameContainer::setWindowTitle(std::string title) {
  */
 
 void GameContainer::close() {
-
     Logger::info("Close signal received");
     gameShouldClose = true;
 }
@@ -246,7 +240,6 @@ void GameContainer::initializeSDL() {
 }
 
 void GameContainer::initializeOpenGL() {
-
     Logger::info("Initializing GLEW");
 
     int glewError = glewInit();
@@ -274,11 +267,9 @@ void GameContainer::initializeOpenGL() {
 
         exit(Constants::STATUS_FAILED);
     }
-
 }
 
 void GameContainer::initializeShaders() {
-
     Logger::info("Initializing Shaders");
 
     colorProgram.compileShaders("../../Assets/Shaders/colorShading.vert", "../../Assets/Shaders/colorShading.frag");
@@ -289,11 +280,9 @@ void GameContainer::initializeShaders() {
 }
 
 void GameContainer::initializeSound() {
-
     Logger::info("Initializing Audio");
 
     if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) != 0) {
         Logger::error("Failed Initializing Audio");
     }
 }
-

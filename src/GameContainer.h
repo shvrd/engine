@@ -22,7 +22,6 @@ class Graphics;
  * The managing class for the engine. This class is responsible for the initialization and the gameloop.
  */
 class GameContainer {
-
     SDL_Window *window = nullptr;
     SDL_GLContext context = nullptr;
 
@@ -65,7 +64,6 @@ class GameContainer {
     GLSLProgram colorProgram;
 
 public:
-
     explicit GameContainer(GameState *currentGameState);
 
     ~GameContainer();
@@ -75,8 +73,6 @@ public:
     const void setWindowTitle(std::string title);
 
     void close();
-
 };
-
 
 #endif //SDLOGL_GAMECONTAINER_H

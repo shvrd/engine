@@ -9,12 +9,9 @@
 #include <fstream>
 #include <vector>
 
-GLSLProgram::GLSLProgram() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttributes(0) {
-
-}
+GLSLProgram::GLSLProgram() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttributes(0) {}
 
 GLSLProgram::~GLSLProgram() = default;
-
 
 /**
  * Creates a GLSL Shaderprogram using a vertex- and a fragmentshader source file.
@@ -22,7 +19,6 @@ GLSLProgram::~GLSLProgram() = default;
  * @param fragmentShaderPath Relative file path to the fragment shader source file
  */
 void GLSLProgram::compileShaders(const std::string &vertexShaderPath, const std::string &fragmentShaderPath) {
-
     programID = glCreateProgram();
 
     vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
@@ -39,14 +35,12 @@ void GLSLProgram::compileShaders(const std::string &vertexShaderPath, const std:
 
     compileShader(vertexShaderPath, vertexShaderID);
     compileShader(fragmentShaderPath, fragmentShaderID);
-
 }
 
 /**
  * Links the shader source files. Requires the shaders to be compiled first.
  */
 void GLSLProgram::linkShaders() {
-
     if (vertexShaderID == 0 || fragmentShaderID == 0) {
         Logger::error("Shaders have no id, thus are not successfully compiled.");
         return;
@@ -79,7 +73,6 @@ void GLSLProgram::linkShaders() {
         glDeleteShader(vertexShaderID);
         glDeleteShader(fragmentShaderID);
     }
-
     //Detach Shaders after successful link
 
     glDetachShader(programID, vertexShaderID);
@@ -87,7 +80,6 @@ void GLSLProgram::linkShaders() {
 
     glDeleteShader(vertexShaderID);
     glDeleteShader(fragmentShaderID);
-
 }
 
 /**
@@ -135,7 +127,6 @@ void GLSLProgram::compileShader(const std::string &filePath, GLuint shaderID) {
         glDeleteShader(shaderID);
     }
 }
-
 
 /**
  * Adds a vertex attribute
