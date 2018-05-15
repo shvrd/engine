@@ -19,4 +19,4 @@ include_directories(${googletest_SOURCE_DIR} ../src)
 
 set(test_SRCS gtestTest.cpp TestingGameState.h GameContainerTest.cpp GameEnvironment.cpp GameEnvironment.h)
 add_executable(runUnitTests gtest.cpp ${test_SRCS})
-target_link_libraries(runUnitTests gtest gmock shvrdengine spdlog::spdlog ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${PNG_LIBRARIES} ${OPENGL_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${GLEW_LIBRARIES} ${GLM_LIBRARIES} ${SDL2MIXER_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(runUnitTests gtest gmock shvrdengine spdlog::spdlog ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${PNG_LIBRARIES} ${OPENGL_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${GLEW_LIBRARIES} ${GLM_LIBRARIES} ${SDL2MIXER_LIBRARIES} ${Boost_LIBRARIES} ${OPENAL_LIBRARY})

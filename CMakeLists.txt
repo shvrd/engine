@@ -15,12 +15,11 @@ IF(MINGW)
     INCLUDE(FindPkgConfig)
     INCLUDE(FindOpenGL)
     INCLUDE(FindGLEW)
-    #INCLUDE(FindPNG)
     INCLUDE(FindBoost)
+    INCLUDE(FindOpenAL)
 
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
     PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
-    PKG_SEARCH_MODULE(SDL2MIXER REQUIRED SDL2_mixer>=2.0.0)
 
     PKG_SEARCH_MODULE(GLM REQUIRED glm)
 
@@ -29,19 +28,18 @@ ELSEIF(APPLE)
     MESSAGE(${CMAKE_SYSTEM})
 
     # Add mac specific variable settings here
-    # To install required packages run: brew install boost-python glm glib glew sdl2 sdl2_image sdl2_mixer spdlog
+    # To install required packages run: brew install boost-python glm glib glew sdl2 sdl2_image openal spdlog
 
     INCLUDE(FindPkgConfig)
     INCLUDE(FindOpenGL)
     INCLUDE(FindGLEW)
-    #INCLUDE(FindPNG)
     INCLUDE(FindBoost)
+    INCLUDE(FindOpenAL)
 
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
     PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
-    PKG_SEARCH_MODULE(SDL2MIXER REQUIRED SDL2_mixer>=2.0.0)
 
-    #PKG_SEARCH_MODULE(GLM REQUIRED glm)
+    PKG_SEARCH_MODULE(GLM REQUIRED glm)
 
     find_package(spdlog CONFIG REQUIRED)
     find_package(Threads)
@@ -56,12 +54,11 @@ ELSEIF(UNIX)
     INCLUDE(FindPkgConfig)
     INCLUDE(FindOpenGL)
     INCLUDE(FindGLEW)
-    #INCLUDE(FindPNG)
     INCLUDE(FindBoost)
+    INCLUDE(FindOpenAL)
 
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
     PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
-    PKG_SEARCH_MODULE(SDL2MIXER REQUIRED SDL2_mixer>=2.0.0)
 
     PKG_SEARCH_MODULE(GLM REQUIRED glm)
 
