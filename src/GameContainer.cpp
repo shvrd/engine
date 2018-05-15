@@ -105,7 +105,6 @@ GameContainer::~GameContainer() {
     Logger::info("Shutting down SDL systems");
 
     SDL_DestroyWindow(window);
-    Mix_Quit();
     SDL_Quit();
 
     Logger::info("Exiting engine");
@@ -279,10 +278,15 @@ void GameContainer::initializeShaders() {
     colorProgram.linkShaders();
 }
 
+#include <AL/al.h>
+#include <alc.h>
+
 void GameContainer::initializeSound() {
     Logger::info("Initializing Audio");
 
-    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) != 0) {
-        Logger::error("Failed Initializing Audio");
-    }
+    // https://www.openal.org/documentation/OpenAL_Programmers_Guide.pdf
+
+//    if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) != 0) {
+//        Logger::error("Failed Initializing Audio");
+//    }
 }

@@ -25,7 +25,10 @@ Written in c++ with platform independency in mind, this engine offers high perfo
 ## Installation
 
 As this engine still is in heavy development, there are no release verions yet. However, you can build it from source
-by cloning this repository and running the generated cmake file.
+by cloning this repository following these steps:
+
+### Install required development libraries
+
 The required development libraries are:
 
 * SDL2
@@ -37,6 +40,27 @@ The required development libraries are:
 * spdlog
 
 And of course OpenGL development libraries.
+
+### Download "DownloadProject"
+
+For automated installation and building of the [google-test](https://github.com/google/googletest) framework this engine uses the [DownloadProject](https://github.com/Crascit/DownloadProject) CMake module. 
+The module has to be cloned into the `.repo/DownloadProject` folder. This can be done using the following command from project root:  
+
+`git clone https://github.com/Crascit/DownloadProject.git .repo/DownloadProject/`
+
+### Generate makefiles
+
+Since this engine is built with CMake, the makefiles have to be generated. This can simply be done using the following command at project root.
+
+`cmake CMakeLists.txt`
+
+### Building the library
+
+Building the library is simply done by running the following command.
+
+`make shvrdengine`
+
+The built engine file `libshvrdengine` with your platform-specific library file extension can then be found inside the `src/` directory.
 
 ## Contributing
 
