@@ -14,7 +14,7 @@
  */
 
 void GameContainer::update() {
-    input->update(this);
+    input->update();
 
     //TODO: Calculate delta
     currentGameState->update(0, input, this);
@@ -61,7 +61,9 @@ GameContainer::GameContainer(GameState *currentGameState)
 
     do {
         gameLoop();
-    } while (!gameShouldClose);
+    } while (!input->closeRequested());
+
+    Logger::info("Close signal received");
 
     currentGameState->onLeave();
 
@@ -174,15 +176,6 @@ const void GameContainer::setWindowTitle(std::string title) {
     SDL_SetWindowTitle(window, title.c_str());
 }
 
-/**
- * Tells the engine to stop the gameloop after finishing the current cycle. After the gameloop the "onLeave"-function
- * of the current gamestate will be called.
- */
-
-void GameContainer::close() {
-    Logger::info("Close signal received");
-    gameShouldClose = true;
-}
 
 /**
  * The wrapper function for all systems that have to be initialized
