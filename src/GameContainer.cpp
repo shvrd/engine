@@ -2,6 +2,7 @@
 // Created by thekatze on 31/01/18.
 //
 
+#include <SDL.h>
 #include "GameContainer.h"
 
 #include "Util/Logger.h"
@@ -32,7 +33,7 @@ void GameContainer::render() {
     currentGameState->render(graphics);
 
     glBindTexture(GL_TEXTURE_2D, 0);
-    SDL_GL_SwapWindow(window);
+    SDL_GL_SwapWindow(window->getWindow());
 }
 
 //TODO: Separate this function to something like: gamecontainer.init(), gamecontainer.setwindowsize(), gamecontainer.launch()
@@ -48,16 +49,10 @@ GameContainer::GameContainer(GameState *currentGameState)
 
     initializeSystems();
 
-    // sprites.push_back(new Sprite(-1, -1, 1, 1, assetPath + "devTile.png"));
-    // sprites.push_back(new Sprite(0, 0, 1, 1, assetPath + "devTile.png"));
-
     graphics = new Graphics();
     input = new Input();
 
     currentGameState->onEnter();
-
-    //Gameloop
-    //TODO: Threaded update and render?
 
     do {
         gameLoop();
@@ -104,8 +99,8 @@ void GameContainer::gameLoop() {
 GameContainer::~GameContainer() {
     Logger::info("Shutting down SDL systems");
 
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+    delete window;
+    window = nullptr;
 
     Logger::info("Exiting engine");
 }
@@ -166,15 +161,6 @@ const void GameContainer::enterGameState(GameState *newGameState) {
 }
 
 /**
- * Changes the window title
- * @param title The new window title
- */
-
-const void GameContainer::setWindowTitle(std::string title) {
-    SDL_SetWindowTitle(window, title.c_str());
-}
-
-/**
  * Tells the engine to stop the gameloop after finishing the current cycle. After the gameloop the "onLeave"-function
  * of the current gamestate will be called.
  */
@@ -189,83 +175,12 @@ void GameContainer::close() {
  */
 
 void GameContainer::initializeSystems() {
-    initializeSDL();
-    initializeOpenGL();
-    initializeShaders();
-    initializeSound();
-}
-
-void GameContainer::initializeSDL() {
-    Logger::info("Initializing SDL");
-
-    //Initialize Graphics
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-        Logger::error("Initializing SDL_VIDEO failed.");
-        Logger::error(SDL_GetError());
-
-        exit(Constants::STATUS_FAILED);
-    }
-
-    //Create Window
-
     Logger::info("Creating Window");
 
-    //Enable Doublebuffering
-    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-    SDL_GL_SetSwapInterval(1); //VSync on
+    this->window = new Window();
 
-    window = SDL_CreateWindow("Engine", SDL_WINDOWPOS_CENTERED_DISPLAY(0), SDL_WINDOWPOS_CENTERED_DISPLAY(0), 1280, 960,
-                              SDL_WINDOW_OPENGL);
-
-    if (window == nullptr) {
-        Logger::error("Initializing Window failed.");
-        Logger::error(SDL_GetError());
-
-        exit(Constants::STATUS_FAILED);
-    }
-
-    //Create Context
-
-    Logger::info("Creating SDL_GL Context");
-
-    context = SDL_GL_CreateContext(window);
-
-    if (context == nullptr) {
-        Logger::error("Initializing OpenGL Context failed.");
-        Logger::error(SDL_GetError());
-
-        exit(Constants::STATUS_FAILED);
-    }
-}
-
-void GameContainer::initializeOpenGL() {
-    Logger::info("Initializing GLEW");
-
-    int glewError = glewInit();
-
-    if (glewError != GLEW_OK) {
-        Logger::error("Initializing GLEW failed");
-        Logger::error(std::to_string(glewError).append(" - GLEW Error Code."));
-        exit(Constants::STATUS_FAILED);
-    }
-
-    Logger::info("Initializing OpenGL");
-
-    const GLubyte *glVersion = glGetString(GL_VERSION);
-
-    std::string glVersionString = reinterpret_cast<char const *>(glVersion);
-
-    Logger::info("OpenGL Version: " + glVersionString);
-
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-
-    GLenum glError = glGetError();
-    if (glError != GL_NO_ERROR) {
-        Logger::error("Initializing OpenGL Failed");
-        Logger::error(std::to_string(glError).append(" - OpenGL Error Code."));
-
-        exit(Constants::STATUS_FAILED);
-    }
+    initializeShaders();
+    initializeSound();
 }
 
 void GameContainer::initializeShaders() {
@@ -277,9 +192,6 @@ void GameContainer::initializeShaders() {
     colorProgram.addAttribute("vertexUV");
     colorProgram.linkShaders();
 }
-
-#include <AL/al.h>
-#include <alc.h>
 
 void GameContainer::initializeSound() {
     Logger::info("Initializing Audio");

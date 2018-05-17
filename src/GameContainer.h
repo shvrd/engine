@@ -5,13 +5,8 @@
 #ifndef SDLOGL_GAMECONTAINER_H
 #define SDLOGL_GAMECONTAINER_H
 
-class GameState;
-
-class Graphics;
-
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_mixer.h>
 #include <vector>
+#include "Window.h"
 #include "Input.h"
 #include "Graphics/Sprite.h"
 #include "Graphics/GLSLProgram.h"
@@ -22,8 +17,7 @@ class Graphics;
  * The managing class for the engine. This class is responsible for the initialization and the gameloop.
  */
 class GameContainer {
-    SDL_Window *window = nullptr;
-    SDL_GLContext context = nullptr;
+    Window* window;
 
     const std::string assetPath = "../Assets/";
 
@@ -35,10 +29,6 @@ class GameContainer {
     Input *input;
 
     void initializeSystems();
-
-    void initializeSDL();
-
-    void initializeOpenGL();
 
     void initializeShaders();
 

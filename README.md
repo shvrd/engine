@@ -68,4 +68,5 @@ If you want to contribute to this project please follow the guidelines provided 
 
 ## Special Thanks
 
+* [MakingGamesWithBen](https://www.youtube.com/playlist?list=PLSPw4ASQYyymu3PfG9gxywSPghnSMiOAW) for his awesome OpenGL tutorial
 * [snyderL](https://github.com/snyderl) for macOS support
