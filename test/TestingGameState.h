@@ -23,10 +23,10 @@ public:
         left = true;
     };
 
-    void update(const int &delta, Input const *input, GameContainer *gameContainer) {
+    void update(const int &delta, Input *input, GameContainer *gameContainer) {
         Logger::info("Updated TestingGameState");
         updated = true;
-        gameContainer->close();
+        input->requestClose();
     };
 
     void render(Graphics const *graphics) {

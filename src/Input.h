@@ -32,9 +32,8 @@ public:
 
     void update();
 
-    bool closeRequested() {
-      return isCloseRequested;
-    }
+    void const requestClose() {isCloseRequested = true;}
+    bool const closeRequested() {return isCloseRequested;}
 
     struct Window {
         bool shouldClose;

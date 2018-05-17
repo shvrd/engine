@@ -5,8 +5,7 @@
 #ifndef SHVRDENGINE_TEST_WINDOW_H
 #define SHVRDENGINE_TEST_WINDOW_H
 
-
-#include <SDL_video.h>
+#include <SDL2/SDL_video.h>
 
 class Window {
     SDL_Window *window = nullptr;

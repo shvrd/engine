@@ -22,7 +22,7 @@ void BasicGameState::onLeave() {
     Logger::info("Left Basic Gamestate");
 }
 
-void BasicGameState::update(const int &delta, const Input *input, GameContainer *gameContainer) {
+void BasicGameState::update(const int &delta, Input *input, GameContainer *gameContainer) {
     debugger->logRAM();
 }
 

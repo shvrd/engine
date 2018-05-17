@@ -4,6 +4,7 @@
 
 #include "gtest/gtest.h"
 #include "TestingGameState.h"
+#include "GameContainer.h"
 
 TEST(GameContainerTest, TestInitialGameState) {
     auto *tgs = new TestingGameState();
@@ -14,5 +15,4 @@ TEST(GameContainerTest, TestInitialGameState) {
     EXPECT_EQ(tgs->updated, true) << "Updated Gamestate";
     EXPECT_EQ(tgs->rendered, true) << "Rendered Gamestate";
     EXPECT_EQ(tgs->left, true) << "Left Gamestate";
-
 }

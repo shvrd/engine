@@ -2,6 +2,8 @@
 // Created by thekatze on 07/02/18.
 //
 
+//TODO: Change PicoPNG to LodePNG (http://lodev.org/lodepng/)
+
 #ifndef SDLOGL_PICOPNG_H
 #define SDLOGL_PICOPNG_H
 
