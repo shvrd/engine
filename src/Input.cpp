@@ -17,7 +17,7 @@ Input::~Input() {
 }
 
 
-void Input::update(GameContainer *gameContainer) {
+void Input::update() {
     SDL_Event event = SDL_Event();
 
     mouseMoved = false;
@@ -25,7 +25,7 @@ void Input::update(GameContainer *gameContainer) {
     while (SDL_PollEvent(&event)) {
         switch (event.type) {
             case SDL_QUIT:
-                gameContainer->close();
+                isCloseRequested = true;
                 break;
             case SDL_KEYDOWN:
                 // event.key.keysym.sym;

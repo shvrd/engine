@@ -21,8 +21,6 @@ class GameContainer {
 
     const std::string assetPath = "../Assets/";
 
-    bool gameShouldClose = false;
-
     GameState *currentGameState;
 
     Graphics *graphics;
@@ -61,8 +59,6 @@ public:
     const void enterGameState(GameState *newGameState);
 
     const void setWindowTitle(std::string title);
-
-    void close();
 };
 
 #endif //SDLOGL_GAMECONTAINER_H

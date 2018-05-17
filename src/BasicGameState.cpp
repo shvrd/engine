@@ -7,6 +7,7 @@
 
 #include "Util/Logger.h"
 #include "Util/Debugger/Debugger.h"
+#include "GameContainer.h"
 
 Debugger *debugger;
 

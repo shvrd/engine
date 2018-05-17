@@ -5,7 +5,7 @@
 #ifndef SDLOGL_GAMESTATE_H
 #define SDLOGL_GAMESTATE_H
 
-class Input;
+class GameContainer;
 
 #include "Input.h"
 #include "Graphics/Graphics.h"

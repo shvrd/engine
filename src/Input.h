@@ -5,9 +5,6 @@
 #ifndef SDLOGL_INPUT_H
 #define SDLOGL_INPUT_H
 
-class GameContainer;
-
-#include "GameContainer.h"
 #include "Types/Vector2.h"
 
 /**
@@ -17,6 +14,7 @@ class GameContainer;
 
 class Input {
 
+    bool isCloseRequested = false;
     bool mouseMoved;
 
     /**
@@ -32,7 +30,11 @@ public:
 
     ~Input();
 
-    void update(GameContainer *gameContainer);
+    void update();
+
+    bool closeRequested() {
+      return isCloseRequested;
+    }
 
     struct Window {
         bool shouldClose;
