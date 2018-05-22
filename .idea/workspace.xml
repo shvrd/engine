@@ -45,12 +45,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4d2e1c6-a325-4840-a95b-1f896dd9eb77" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicGameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/Graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Graphics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/ImageLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/ImageLoader.h" afterDir="false" />
-    </list>
+    <list default="true" id="f4d2e1c6-a325-4840-a95b-1f896dd9eb77" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -383,7 +378,7 @@
       <workItem from="1526584169558" duration="1385000" />
       <workItem from="1526589196803" duration="905000" />
       <workItem from="1526746204722" duration="240000" />
-      <workItem from="1527011940474" duration="3098000" />
+      <workItem from="1527011940474" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Unit Tests and updated Doxyfile">
       <created>1526590085249</created>
@@ -406,11 +401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527014222457</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="a little progress">
+      <created>1527015068838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527015068838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28846000" />
+    <option name="totallyTimeSpent" value="28902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,7 +433,7 @@
       <window_info anchor="bottom" id="CMake" order="7" weight="0.27893174" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50105375" side_tool="true" weight="0.28387734" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32937685" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.330366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.330366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49894625" weight="0.28359684" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -455,7 +457,8 @@
     <MESSAGE value="Fixed Unit Tests and updated Doxyfile" />
     <MESSAGE value="Added closing of logger and adapted unit tests" />
     <MESSAGE value="made codefactor not scream at me" />
-    <option name="LAST_COMMIT_MESSAGE" value="made codefactor not scream at me" />
+    <MESSAGE value="a little progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="a little progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
