@@ -12,13 +12,10 @@
  * The texturecache saves loaded images in a map for fast access.
  */
 class TextureCache {
-
     std::map<std::string, GLTexture> textureMap;
 
 public:
-
     GLTexture getTexture(const std::string &filePath);
-
     //TODO: Add freeing of resources
 };
 

@@ -14,7 +14,6 @@ public:
     static Debugger *getInstance();
 
     void logRAM();
-
 };
 
 

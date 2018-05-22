@@ -13,7 +13,6 @@
  * @return Returns a GLTexture struct consisting of the id, width and height.
  */
 GLTexture ImageLoader::loadPNG(std::string filePath) {
-
     //Optimization potential: don't create it on the stack (new GLTexture and return pointer)
     GLTexture texture = {};
 

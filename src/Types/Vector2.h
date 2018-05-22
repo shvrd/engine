@@ -8,7 +8,6 @@
 
 class Vector2 {
 public:
-
     float x, y;
 
     void set(float x, float y) {

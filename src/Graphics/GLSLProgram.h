@@ -12,7 +12,6 @@
  * An interface for vertex- and fragmentshaders.
  */
 class GLSLProgram {
-
     GLuint programID;
     GLuint vertexShaderID;
     GLuint fragmentShaderID;
@@ -20,7 +19,6 @@ class GLSLProgram {
     int numAttributes;
 
     void compileShader(const std::string &filePath, GLuint shaderID);
-
 
 public:
     GLSLProgram();

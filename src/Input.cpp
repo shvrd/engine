@@ -7,7 +7,6 @@
 #include "Util/Logger.h"
 
 Input::Input() {
-
     Logger::info("Initializing Input Wrapper");
     // SDL_SetRelativeMouseMode(SDL_TRUE);
 }

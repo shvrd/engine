@@ -22,7 +22,6 @@ Sprite::~Sprite() {
  * Draws this sprite at its current location
  */
 void Sprite::render() {
-
     glBindTexture(GL_TEXTURE_2D, texture.id);
 
     glBindBuffer(GL_ARRAY_BUFFER, vboID);

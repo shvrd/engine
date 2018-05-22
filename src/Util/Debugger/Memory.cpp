@@ -45,5 +45,4 @@ long Memory::getCurrentMemory() {
 #endif
 
     return currentMemory;
-
 }

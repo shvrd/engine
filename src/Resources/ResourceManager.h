@@ -12,7 +12,6 @@
  * This is the singleton for resource managing. It can hold various sub-managers for graphics, sound and shaders.
  */
 class ResourceManager {
-
     //TODO: Add an arbitrary amount of caches and make caches selectable
     TextureCache textureCache;
 
@@ -21,14 +20,11 @@ class ResourceManager {
     ~ResourceManager();
 
 public:
-
     static ResourceManager *getInstance();
 
     GLTexture getTexture(const std::string &filePath);
 
     GLuint boundTexture;
-
-
 };
 
 

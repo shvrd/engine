@@ -24,7 +24,6 @@ void Window::setTitle(char* title) {
 
 
 void Window::initialize() {
-
     Logger::info("Initializing SDL");
 
     //Initialize Graphics

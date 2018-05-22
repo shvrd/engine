@@ -13,7 +13,6 @@
  */
 
 class Input {
-
     bool isCloseRequested = false;
     bool mouseMoved;
 
@@ -37,7 +36,6 @@ public:
 
     struct Window {
         bool shouldClose;
-
     };
 
     /**
@@ -55,9 +53,6 @@ public:
     const Vector2 getMouseDelta() const {
         return (mouseMoved) ? mouse.delta : Vector2{0, 0};
     }
-
-
 };
-
 
 #endif //SDLOGL_INPUT_H

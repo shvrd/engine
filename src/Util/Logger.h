@@ -8,9 +8,7 @@
 #include <string>
 
 class Logger {
-
 public:
-
     static void initialize(std::string filePath, bool consoleLogging);
 
 

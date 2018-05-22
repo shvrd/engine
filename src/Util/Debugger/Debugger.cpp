@@ -30,6 +30,4 @@ Debugger *Debugger::getInstance() {
 
 // https://github.com/hyperic/sigar
 
-void Debugger::logRAM() {
-
-}
+void Debugger::logRAM() {}

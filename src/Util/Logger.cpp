@@ -26,7 +26,6 @@ void Logger::initialize(std::string filePath, bool consoleLogging) {
  * @param message The message to print
  */
 void Logger::error(std::string message) {
-
     logger->error(message);
 
     if (console) {
@@ -39,7 +38,6 @@ void Logger::error(std::string message) {
  * @param message The message to print
  */
 void Logger::warning(std::string message) {
-
     logger->warn(message);
 
     if (console) {
@@ -52,7 +50,6 @@ void Logger::warning(std::string message) {
  * @param message The message to print
  */
 void Logger::info(std::string message) {
-
     logger->info(message);
 
     if (console) {

@@ -7,9 +7,7 @@
 
 static ResourceManager *resourceManager;
 
-ResourceManager::ResourceManager() : boundTexture(0) {
-
-}
+ResourceManager::ResourceManager() : boundTexture(0) {}
 
 ResourceManager::~ResourceManager() = default;
 

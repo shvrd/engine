@@ -14,12 +14,10 @@
  * The Graphics wrapper used for drawing objects. This is a high level abstraction of OpenGL.
  */
 class Graphics {
-
     GLSLProgram *currentGLSLProgram;
     GLTexture currentTexture;
 
 public:
-
     Graphics();
 
     ~Graphics();

@@ -15,9 +15,7 @@ protected:
         new GameContainer(tgs);
     }
 
-    virtual void TearDown() {
-
-    }
+    virtual void TearDown() {}
 };
 
 TEST_F(GameContainerTest, EnteredGamestateTest) {

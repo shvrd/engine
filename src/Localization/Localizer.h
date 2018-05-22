@@ -12,11 +12,9 @@
 #include "../Audio/Music.h"
 
 class Localizer {
-
     LanguageCode currentLanguage = LanguageCode::EN;
 
 public:
-
     explicit Localizer(LanguageCode language);
 
     ~Localizer();
@@ -25,9 +23,7 @@ public:
 
     Sound getSound(std::string identifier);
 
-    Music getMusic(std::string);
-
+    Music getMusic(std::string identifier);
 };
-
 
 #endif //SDLOGL_LOCALIZER_H

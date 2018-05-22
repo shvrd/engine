@@ -12,7 +12,6 @@
  * @return Returns the GLTexture struct for this texture.
  */
 GLTexture TextureCache::getTexture(const std::string &filePath) {
-
     //see if texture is in the map
     // std::map<std::string, GLTexture>::iterator -> auto
     auto mapIterator = textureMap.find(filePath);

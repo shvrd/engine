@@ -12,17 +12,14 @@
  * A wrapper for GLSLPrograms for use in the ResourceManager
  */
 class Shader {
-
     GLSLProgram *boundGLSLProgram;
 
 public:
-
     Shader(std::string vertexShaderPath, std::string fragmentShaderPath);
 
     ~Shader() = default;
 
     GLSLProgram *getGLSLProgram() { return this->boundGLSLProgram; }
-
 };
 
 

@@ -6,7 +6,6 @@
 #include "BasicGameState.h"
 
 int main() {
-
     new GameContainer(new BasicGameState());
 
     return 0;

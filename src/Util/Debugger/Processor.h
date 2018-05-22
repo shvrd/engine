@@ -7,7 +7,6 @@
 
 
 class Processor {
-
     long getUsage();
 };
 

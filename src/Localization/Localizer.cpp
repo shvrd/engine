@@ -4,13 +4,9 @@
 
 #include "Localizer.h"
 
-Localizer::Localizer(LanguageCode language) : currentLanguage(language) {
-    //TODO: Open language file, create map...
-}
+Localizer::Localizer(LanguageCode language) : currentLanguage(language) {}
 
-Localizer::~Localizer() {
-
-}
+Localizer::~Localizer() {}
 
 std::string Localizer::getText(std::string identifier) {
     return std::__cxx11::string();

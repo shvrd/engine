@@ -14,7 +14,6 @@
  * A rectangular sprite consisting of a texture, its position, width and height
  */
 class Sprite {
-
     static const int VERTICES = 6;
 
     Vector2 location;

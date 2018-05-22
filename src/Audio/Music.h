@@ -6,9 +6,7 @@
 #define SDLOGL_MUSIC_H
 
 
-class Music {
-
-};
+class Music {};
 
 
 #endif //SDLOGL_MUSIC_H

@@ -6,9 +6,7 @@
 #define SDLOGL_SOUND_H
 
 
-class Sound {
-
-};
+class Sound {};
 
 
 #endif //SDLOGL_SOUND_H
