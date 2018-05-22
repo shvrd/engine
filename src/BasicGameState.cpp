@@ -26,20 +26,3 @@ void BasicGameState::update(const int &delta, Input *input, GameContainer *gameC
 }
 
 void BasicGameState::render(const Graphics *graphics) {}
-/*
-colorProgram.bind();
-glActiveTexture(GL_TEXTURE0);
-// glBindTexture(GL_TEXTURE_2D, testTexture.id);
-
-glUniform1i(colorProgram.getUniformLocation("sampler"), 0);
-
-GLint timeLocation = colorProgram.getUniformLocation("time");
-
-glUniform1f(timeLocation, time);
-
-for (Sprite *sprite : sprites) {
-    sprite->render();
-}
-
-colorProgram.unbind();
- */

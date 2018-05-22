@@ -12,8 +12,6 @@
  * Loads images onto the graphics card and stores the GL Texture ID
  */
 class ImageLoader {
-
-
 public:
     static GLTexture loadPNG(std::string filePath);
 };

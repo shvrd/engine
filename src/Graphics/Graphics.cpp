@@ -22,14 +22,34 @@ void Graphics::startSpriteBatch(Sprite *sprite) {
  * @param shader The shader to be bound.
  */
 void Graphics::bindShader(Shader *shader) {
+    if (this->currentGLSLProgram == shader->getGLSLProgram()) {
+        Logger::warning("Shader would have been rebound, skipping.");
+    }
     this->currentGLSLProgram = shader->getGLSLProgram();
-
+    this->currentGLSLProgram->bind();
     //Enable Vertex Attrib Arrays (handled by shader object)
 
     //Bind uniforms (shader)
 
     //Do shader stuff
 }
+/*
+colorProgram.bind();
+glActiveTexture(GL_TEXTURE0);
+// glBindTexture(GL_TEXTURE_2D, testTexture.id);
+
+glUniform1i(colorProgram.getUniformLocation("sampler"), 0);
+
+GLint timeLocation = colorProgram.getUniformLocation("time");
+
+glUniform1f(timeLocation, time);
+
+for (Sprite *sprite : sprites) {
+    sprite->render();
+}
+
+colorProgram.unbind();
+ */
 
 Graphics::Graphics() {
     Logger::info("Initializing Graphics System");
