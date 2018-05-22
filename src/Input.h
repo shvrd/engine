@@ -48,7 +48,7 @@ public:
 
     /**
      * Gets the relative mouse motion
-     * @return Returns the last mousedelta if the mouse has been moved.
+     * @return Returns the last mousedelta if the mouse has been moved, otherwise returns {0, 0}.
      */
     const Vector2 getMouseDelta() const {
         return (mouseMoved) ? mouse.delta : Vector2{0, 0};

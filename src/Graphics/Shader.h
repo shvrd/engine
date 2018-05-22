@@ -13,6 +13,7 @@
  */
 class Shader {
     GLSLProgram *boundGLSLProgram;
+    std::map<std::string, GLuint> uniforms;
 
 public:
     Shader(std::string vertexShaderPath, std::string fragmentShaderPath);
