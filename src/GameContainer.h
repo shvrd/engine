@@ -40,6 +40,8 @@ class GameContainer {
 
     void render();
 
+    void cleanUp();
+
     float time;
     float timeScale;
 

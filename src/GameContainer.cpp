@@ -63,6 +63,12 @@ GameContainer::GameContainer(GameState *currentGameState)
     currentGameState->onLeave();
 
     Logger::info("Left gameloop");
+
+    this->cleanUp();
+}
+
+GameContainer::~GameContainer() {
+    this->cleanUp();
 }
 
 /**
@@ -98,13 +104,15 @@ void GameContainer::gameLoop() {
  * Cleaning up by quitting the subsystems
  */
 
-GameContainer::~GameContainer() {
+void GameContainer::cleanUp() {
     Logger::info("Shutting down SDL systems");
 
     delete window;
     window = nullptr;
 
     Logger::info("Exiting engine");
+
+    Logger::close();
 }
 
 /**

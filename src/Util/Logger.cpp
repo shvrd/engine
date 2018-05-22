@@ -7,6 +7,7 @@
 
 std::shared_ptr<spdlog::logger> logger;
 bool console;
+static std::string loggerName = "Engine";
 
 /**
  * Initializes the logger and prints a first logging message
@@ -14,7 +15,7 @@ bool console;
  * @param consoleLogging Enables console logging if true
  */
 void Logger::initialize(std::string filePath, bool consoleLogging) {
-    logger = spdlog::basic_logger_mt("Engine", filePath);
+    logger = spdlog::basic_logger_mt(loggerName, filePath);
     console = consoleLogging;
 
     Logger::info("Logger initialized");
@@ -66,5 +67,12 @@ void Logger::info(std::string message) {
  */
 void Logger::terminate(int errorCode) {
     logger->critical("Terminating Program with exit code " + std::to_string(errorCode));
+
     exit(errorCode);
+}
+
+void Logger::close() {
+    Logger::info("Closing Engine Logger");
+
+    spdlog::drop(loggerName);
 }

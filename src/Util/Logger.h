@@ -21,6 +21,8 @@ public:
     static void info(std::string message);
 
     static void terminate(int errorCode);
+
+    static void close();
 };
 
 
