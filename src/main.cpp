@@ -6,6 +6,9 @@
 #include "BasicGameState.h"
 
 int main() {
+
+    std::string windowTitle = "Engine";
+
     new GameContainer(new BasicGameState());
 
     return 0;

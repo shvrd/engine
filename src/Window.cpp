@@ -8,8 +8,9 @@
 #include "Util/Logger.h"
 #include "Util/Constants.h"
 
-Window::Window() {
-    this->initialize();
+Window::Window(const char *title, int windowWidth, int windowHeight) {
+    Logger::info("Creating Window");
+    this->initialize(title, windowWidth, windowHeight);
 }
 
 
@@ -18,12 +19,12 @@ Window::Window() {
  * @param title The new window title
  */
 
-void Window::setTitle(char* title) {
+void Window::setTitle(const char* title) {
     SDL_SetWindowTitle(window, title);
 }
 
 
-void Window::initialize() {
+void Window::initialize(const char *title, int windowWidth, int windowHeight) {
     Logger::info("Initializing SDL");
 
     //Initialize Graphics
@@ -40,7 +41,7 @@ void Window::initialize() {
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetSwapInterval(1); //VSync on
 
-    window = SDL_CreateWindow("Engine", SDL_WINDOWPOS_CENTERED_DISPLAY(0), SDL_WINDOWPOS_CENTERED_DISPLAY(0), 1280, 960,
+    window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED_DISPLAY(0), SDL_WINDOWPOS_CENTERED_DISPLAY(0), windowWidth, windowHeight,
                               SDL_WINDOW_OPENGL);
 
     if (window == nullptr) {

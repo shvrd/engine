@@ -11,16 +11,16 @@ class Window {
     SDL_Window *window = nullptr;
     SDL_GLContext context = nullptr;
 
-    void initialize();
+    void initialize(const char *title, int windowWidth, int windowHeight);
 
 public:
-    Window();
+    Window(const char *title, int windowWidth, int windowHeight);
     ~Window();
 
     SDL_Window *getWindow() {return window;}
     SDL_GLContext getContext() {return context;}
 
-    void setTitle(char *title);
+    void setTitle(const char *title);
 };
 
 #endif //SHVRDENGINE_TEST_WINDOW_H

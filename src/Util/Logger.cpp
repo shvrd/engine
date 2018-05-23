@@ -59,7 +59,7 @@ void Logger::info(std::string message) {
 
 /**
  * NOT RECOMMENDED; SHOULD ONLY BE USED IN ABSOLUTE WORST CASE SCENARIOS
- * Terminates the program instantly without any cleaning up or .
+ * Terminates the program instantly without any cleaning up or anything.
  * @param errorCode
  */
 void Logger::terminate(int errorCode) {

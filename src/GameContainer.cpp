@@ -6,8 +6,6 @@
 #include "GameContainer.h"
 
 #include "Util/Logger.h"
-#include "Util/Constants.h"
-#include "Resources/ResourceManager.h"
 
 /**
  * Calls the update function of the current gamestate
@@ -46,6 +44,8 @@ void GameContainer::render() {
 GameContainer::GameContainer(GameState *currentGameState)
         : time(0.0f), timeScale(0.01f), maxFPS(60.0f), currentGameState(currentGameState) {
     Logger::initialize("log.txt", true);
+
+    this->window = window;
 
     initializeSystems();
 
@@ -177,7 +177,7 @@ const void GameContainer::enterGameState(GameState *newGameState) {
 void GameContainer::initializeSystems() {
     Logger::info("Creating Window");
 
-    this->window = new Window();
+    this->window = new Window("Engine", 1280, 960);
 
     initializeShaders();
     initializeSound();
