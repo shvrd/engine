@@ -21,6 +21,10 @@ public:
     ~Shader() = default;
 
     GLSLProgram *getGLSLProgram() { return this->boundGLSLProgram; }
+
+
+
+    static Shader *getDefaultShader();
 };
 
 

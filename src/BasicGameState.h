@@ -18,7 +18,7 @@ class BasicGameState : public GameState {
 
     void update(const int &delta, Input *input, GameContainer *gameContainer) override;
 
-    void render(const Graphics *graphics) override;
+    void render(Graphics *graphics) override;
 };
 
 

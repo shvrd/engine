@@ -45,8 +45,6 @@ GameContainer::GameContainer(GameState *currentGameState)
         : time(0.0f), timeScale(0.01f), maxFPS(60.0f), currentGameState(currentGameState) {
     Logger::initialize("log.txt", true);
 
-    this->window = window;
-
     initializeSystems();
 
     graphics = new Graphics();
@@ -184,13 +182,8 @@ void GameContainer::initializeSystems() {
 }
 
 void GameContainer::initializeShaders() {
-    Logger::info("Initializing Shaders");
-
-    colorProgram.compileShaders("../../Assets/Shaders/colorShading.vert", "../../Assets/Shaders/colorShading.frag");
-    colorProgram.addAttribute("vertexPostion");
-    colorProgram.addAttribute("vertexColor");
-    colorProgram.addAttribute("vertexUV");
-    colorProgram.linkShaders();
+    Logger::info("Initializing Basic Shaders");
+    Shader::getDefaultShader();
 }
 
 void GameContainer::initializeSound() {

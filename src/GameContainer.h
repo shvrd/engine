@@ -19,8 +19,6 @@
 class GameContainer {
     Window* window;
 
-    const std::string assetPath = "../Assets/";
-
     GameState *currentGameState;
 
     Graphics *graphics;
@@ -54,6 +52,7 @@ class GameContainer {
     GLSLProgram colorProgram;
 
 public:
+
     explicit GameContainer(GameState *currentGameState);
 
     ~GameContainer();

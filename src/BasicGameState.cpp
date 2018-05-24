@@ -11,10 +11,18 @@
 
 Debugger *debugger;
 
+Shader *basicShader;
+
+Sprite *testSprite;
+
 void BasicGameState::onEnter() {
     debugger = Debugger::getInstance();
 
     Logger::info("Entered Basic Gamestate");
+
+    testSprite = new Sprite(-1, -1, 2, 2, "../../Assets/devTile.png");
+
+    basicShader = Shader::getDefaultShader();
 }
 
 void BasicGameState::onLeave() {
@@ -22,7 +30,12 @@ void BasicGameState::onLeave() {
 }
 
 void BasicGameState::update(const int &delta, Input *input, GameContainer *gameContainer) {
-    debugger->logRAM();
+    // debugger->logRAM();
 }
 
-void BasicGameState::render(const Graphics *graphics) {}
+void BasicGameState::render(Graphics *graphics) {
+    graphics->bindShader(basicShader);
+
+    graphics->startSpriteBatch(testSprite);
+    graphics->drawSprite(testSprite);
+}

@@ -48,7 +48,7 @@ public:
      * The function responsible for rendering the game objects.
      * @param graphics The graphics wrapper, for more documentation consult the documentation of the graphics class
      */
-    virtual void render(Graphics const *graphics) {};
+    virtual void render(Graphics *graphics) {};
 };
 
 

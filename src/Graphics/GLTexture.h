@@ -14,6 +14,10 @@ struct GLTexture {
     GLuint id;
     int width;
     int height;
+
+    bool equals(GLTexture glTexture) {
+        return (this->id == glTexture.id);
+    }
 };
 
 #endif //SDLOGL_GLTEXTURE_H

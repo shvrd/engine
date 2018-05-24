@@ -12,9 +12,10 @@
 void Graphics::startSpriteBatch(Sprite *sprite) {
     glActiveTexture(GL_TEXTURE0);
 
-    glUniform1i(currentGLSLProgram->getUniformLocation("sampler"), 0);
-
+    glUniform1i(currentGLSLProgram->getUniformLocation("image"), 0);
     glBindTexture(GL_TEXTURE_2D, sprite->getGLTexture().id);
+
+    currentTexture = sprite->getGLTexture();
 }
 
 /**
@@ -22,23 +23,16 @@ void Graphics::startSpriteBatch(Sprite *sprite) {
  * @param shader The shader to be bound.
  */
 void Graphics::bindShader(Shader *shader) {
-    if (this->currentGLSLProgram == shader->getGLSLProgram()) {
-        Logger::warning("Shader would have been rebound, skipping.");
-    }
     this->currentGLSLProgram = shader->getGLSLProgram();
     this->currentGLSLProgram->bind();
-    //Enable Vertex Attrib Arrays (handled by shader object)
 
-    //Bind uniforms (shader)
+    //Bind uniform (shader)
 
-    //Do shader stuff
+
 }
 /*
 colorProgram.bind();
-glActiveTexture(GL_TEXTURE0);
-// glBindTexture(GL_TEXTURE_2D, testTexture.id);
 
-glUniform1i(colorProgram.getUniformLocation("sampler"), 0);
 
 GLint timeLocation = colorProgram.getUniformLocation("time");
 
@@ -57,4 +51,14 @@ Graphics::Graphics() {
 
 Graphics::~Graphics() {
     Logger::info("Shutting down Graphics System");
+}
+
+void Graphics::drawSprite(Sprite *sprite) {
+    if (currentTexture.equals(sprite->getGLTexture())) {
+        this->startSpriteBatch(sprite);
+    }
+
+    glBindTexture(GL_TEXTURE_2D, sprite->getGLTexture().id);
+
+    sprite->render();
 }

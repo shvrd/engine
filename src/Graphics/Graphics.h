@@ -24,7 +24,9 @@ public:
 
     void bindShader(Shader *shader);
 
-    void startSpriteBatch(Sprite *glTexture);
+    void startSpriteBatch(Sprite *sprite);
+
+    void drawSprite(Sprite *sprite);
 
 
     GLTexture getCurrentSpriteBatch() { return currentTexture; };

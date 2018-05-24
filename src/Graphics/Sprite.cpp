@@ -22,20 +22,17 @@ Sprite::~Sprite() {
  * Draws this sprite at its current location
  */
 void Sprite::render() {
-    glBindTexture(GL_TEXTURE_2D, texture.id);
-
     glBindBuffer(GL_ARRAY_BUFFER, vboID);
 
     glEnableVertexAttribArray(0);
 
-    //Position Attribute Pointer
+    // Position Attribute Pointer
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void *) offsetof(Vertex, position));
 
-    //Color Attribute Pointer
-
+    // Color Attribute Pointer
     glVertexAttribPointer(1, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(Vertex), (void *) offsetof(Vertex, color));
 
-    //UV Attribute Pointer
+    // UV Attribute Pointer
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void *) offsetof(Vertex, uv));
 
     glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -54,21 +51,9 @@ void Sprite::init(float x, float y, float width, float height, const std::string
 
     this->texture = ResourceManager::getInstance()->getTexture(texturePath);
 
-
-    /* Code in tutorial, i set vboid in header
-
-    vboID = 0; //In Constructor
-
-     //In Sprite::init();
-    if (vboID == 0) {
-        glGenBuffers(1, &vboID);
-    }
-
-    */
-
     glGenBuffers(1, &vboID);
 
-    //Initialize Square
+    // Initialize Square
     // two triangles so 6 vertices
     Vertex vertexData[VERTICES];
 
