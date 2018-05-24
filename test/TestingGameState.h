@@ -12,24 +12,24 @@ class TestingGameState : public GameState {
 public:
     bool entered, updated, rendered, left;
 
-    void onEnter() {
+    void onEnter() override {
         //Initialize shaders
         Logger::info("Entered TestingGameState");
         entered = true;
     };
 
-    void onLeave() {
+    void onLeave() override {
         //Free Resources
         left = true;
     };
 
-    void update(const int &delta, Input *input, GameContainer *gameContainer) {
+    void update(const int &delta, Input *input, GameContainer *gameContainer) override {
         Logger::info("Updated TestingGameState");
         updated = true;
         input->requestClose();
     };
 
-    void render(Graphics const *graphics) {
+    void render(Graphics *graphics) override {
         rendered = true;
         Logger::info("Rendered TestingGameState");
     };
