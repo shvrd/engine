@@ -2,8 +2,8 @@
 // Created by thekatze on 31/01/18.
 //
 
-#ifndef SDLOGL_CONSTANTS_H
-#define SDLOGL_CONSTANTS_H
+#ifndef SHVRDENGINE_SRC_CONSTANTS_H
+#define SHVRDENGINE_SRC_CONSTANTS_H
 
 class Constants {
 public:
@@ -11,4 +11,4 @@ public:
 };
 
 
-#endif //SDLOGL_CONSTANTS_H
+#endif //SHVRDENGINE_SRC_CONSTANTS_H

@@ -2,8 +2,8 @@
 // Created by thekatze on 6/05/18.
 //
 
-#ifndef SDLOGL_COLOR_H
-#define SDLOGL_COLOR_H
+#ifndef SHVRDENGINE_SRC_COLOR_H
+#define SHVRDENGINE_SRC_COLOR_H
 
 
 #include <GL/glew.h>
@@ -21,4 +21,4 @@ public:
 };
 
 
-#endif //SDLOGL_COLOR_H
+#endif //SHVRDENGINE_SRC_COLOR_H

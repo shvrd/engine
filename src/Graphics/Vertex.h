@@ -2,8 +2,8 @@
 // Created by thekatze on 06/02/18.
 //
 
-#ifndef SDLOGL_VERTEX_H
-#define SDLOGL_VERTEX_H
+#ifndef SHVRDENGINE_SRC_VERTEX_H
+#define SHVRDENGINE_SRC_VERTEX_H
 
 #include "../Types/Vector2.h"
 #include "../Types/Color.h"
@@ -24,4 +24,4 @@ struct Vertex {
     Vector2 uv;
 };
 
-#endif //SDLOGL_VERTEX_H
+#endif //SHVRDENGINE_SRC_VERTEX_H

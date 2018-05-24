@@ -2,8 +2,8 @@
 // Created by thekatze on 07/02/18.
 //
 
-#ifndef SDLOGL_IOMANAGER_H
-#define SDLOGL_IOMANAGER_H
+#ifndef SHVRDENGINE_SRC_IOMANAGER_H
+#define SHVRDENGINE_SRC_IOMANAGER_H
 
 #include <vector>
 #include <string>
@@ -15,4 +15,4 @@ public:
 };
 
 
-#endif //SDLOGL_IOMANAGER_H
+#endif //SHVRDENGINE_SRC_IOMANAGER_H

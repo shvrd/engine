@@ -2,8 +2,8 @@
 // Created by thekatze on 1/05/18.
 //
 
-#ifndef SDLOGL_LOCALIZER_H
-#define SDLOGL_LOCALIZER_H
+#ifndef SHVRDENGINE_SRC_LOCALIZER_H
+#define SHVRDENGINE_SRC_LOCALIZER_H
 
 
 #include <string>
@@ -26,4 +26,4 @@ public:
     Music getMusic(std::string identifier);
 };
 
-#endif //SDLOGL_LOCALIZER_H
+#endif //SHVRDENGINE_SRC_LOCALIZER_H

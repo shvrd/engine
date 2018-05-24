@@ -2,8 +2,8 @@
 // Created by thekatze on 07/02/18.
 //
 
-#ifndef SDLOGL_IMAGELOADER_H
-#define SDLOGL_IMAGELOADER_H
+#ifndef SHVRDENGINE_SRC_IMAGELOADER_H
+#define SHVRDENGINE_SRC_IMAGELOADER_H
 
 #include <string>
 #include "../Graphics/GLTexture.h"
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //SDLOGL_IMAGELOADER_H
+#endif //SHVRDENGINE_SRC_IMAGELOADER_H

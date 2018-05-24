@@ -2,8 +2,8 @@
 // Created by thekatze on 17/05/18.
 //
 
-#ifndef SHVRDENGINE_TEST_WINDOW_H
-#define SHVRDENGINE_TEST_WINDOW_H
+#ifndef SHVRDENGINE_SRC_WINDOW_H
+#define SHVRDENGINE_SRC_WINDOW_H
 
 #include <SDL2/SDL_video.h>
 
@@ -23,4 +23,4 @@ public:
     void setTitle(const char *title);
 };
 
-#endif //SHVRDENGINE_TEST_WINDOW_H
+#endif //SHVRDENGINE_SRC_WINDOW_H

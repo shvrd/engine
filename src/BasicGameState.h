@@ -2,8 +2,8 @@
 // Created by thekatze on 21/03/18.
 //
 
-#ifndef SDLOGL_BASICGAMESTATE_H
-#define SDLOGL_BASICGAMESTATE_H
+#ifndef SHVRDENGINE_SRC_BASICGAMESTATE_H
+#define SHVRDENGINE_SRC_BASICGAMESTATE_H
 
 #include "GameState.h"
 
@@ -22,4 +22,4 @@ class BasicGameState : public GameState {
 };
 
 
-#endif //SDLOGL_BASICGAMESTATE_H
+#endif //SHVRDENGINE_SRC_BASICGAMESTATE_H

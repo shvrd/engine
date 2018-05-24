@@ -2,8 +2,8 @@
 // Created by thekatze on 18/03/18.
 //
 
-#ifndef SDLOGL_TEXTURECACHE_H
-#define SDLOGL_TEXTURECACHE_H
+#ifndef SHVRDENGINE_SRC_TEXTURECACHE_H
+#define SHVRDENGINE_SRC_TEXTURECACHE_H
 
 #include <map>
 #include "../Graphics/GLTexture.h"
@@ -20,4 +20,4 @@ public:
 };
 
 
-#endif //SDLOGL_TEXTURECACHE_H
+#endif //SHVRDENGINE_SRC_TEXTURECACHE_H

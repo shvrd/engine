@@ -2,8 +2,8 @@
 // Created by thekatze on 18/03/18.
 //
 
-#ifndef SDLOGL_RESOURCEMANAGER_H
-#define SDLOGL_RESOURCEMANAGER_H
+#ifndef SHVRDENGINE_SRC_RESOURCEMANAGER_H
+#define SHVRDENGINE_SRC_RESOURCEMANAGER_H
 
 #include "TextureCache.h"
 #include "string"
@@ -28,4 +28,4 @@ public:
 };
 
 
-#endif //SDLOGL_RESOURCEMANAGER_H
+#endif //SHVRDENGINE_SRC_RESOURCEMANAGER_H

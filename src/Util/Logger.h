@@ -2,8 +2,8 @@
 // Created by thekatze on 31/01/18.
 //
 
-#ifndef SDLOGL_LOGGER_H
-#define SDLOGL_LOGGER_H
+#ifndef SHVRDENGINE_SRC_LOGGER_H
+#define SHVRDENGINE_SRC_LOGGER_H
 
 #include <string>
 
@@ -24,4 +24,4 @@ public:
 };
 
 
-#endif //SDLOGL_LOGGER_H
+#endif //SHVRDENGINE_SRC_LOGGER_H

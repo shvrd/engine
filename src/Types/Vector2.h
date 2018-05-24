@@ -2,8 +2,8 @@
 // Created by thekatze on 6/05/18.
 //
 
-#ifndef SDLOGL_VECTOR2_H
-#define SDLOGL_VECTOR2_H
+#ifndef SHVRDENGINE_SRC_VECTOR2_H
+#define SHVRDENGINE_SRC_VECTOR2_H
 
 
 class Vector2 {
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //SDLOGL_VECTOR2_H
+#endif //SHVRDENGINE_SRC_VECTOR2_H

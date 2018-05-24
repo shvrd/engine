@@ -2,8 +2,8 @@
 // Created by thekatze on 04/04/18.
 //
 
-#ifndef SDLOGL_GRAPHICS_H
-#define SDLOGL_GRAPHICS_H
+#ifndef SHVRDENGINE_SRC_GRAPHICS_H
+#define SHVRDENGINE_SRC_GRAPHICS_H
 
 #include "Shader.h"
 #include "GLTexture.h"
@@ -33,4 +33,4 @@ public:
 };
 
 
-#endif //SDLOGL_GRAPHICS_H
+#endif //SHVRDENGINE_SRC_GRAPHICS_H

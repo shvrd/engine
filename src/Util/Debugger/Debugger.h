@@ -2,8 +2,8 @@
 // Created by thekatze on 6/05/18.
 //
 
-#ifndef SDLOGL_DEBUGGER_H
-#define SDLOGL_DEBUGGER_H
+#ifndef SHVRDENGINE_SRC_DEBUGGER_H
+#define SHVRDENGINE_SRC_DEBUGGER_H
 
 #include "../Logger.h"
 
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //SDLOGL_DEBUGGER_H
+#endif //SHVRDENGINE_SRC_DEBUGGER_H

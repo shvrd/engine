@@ -2,8 +2,8 @@
 // Created by thekatze on 09/04/18.
 //
 
-#ifndef SDLOGL_INPUT_H
-#define SDLOGL_INPUT_H
+#ifndef SHVRDENGINE_SRC_INPUT_H
+#define SHVRDENGINE_SRC_INPUT_H
 
 #include "Types/Vector2.h"
 
@@ -55,4 +55,4 @@ public:
     }
 };
 
-#endif //SDLOGL_INPUT_H
+#endif //SHVRDENGINE_SRC_INPUT_H

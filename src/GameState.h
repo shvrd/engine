@@ -2,8 +2,8 @@
 // Created by thekatze on 21/03/18.
 //
 
-#ifndef SDLOGL_GAMESTATE_H
-#define SDLOGL_GAMESTATE_H
+#ifndef SHVRDENGINE_SRC_GAMESTATE_H
+#define SHVRDENGINE_SRC_GAMESTATE_H
 
 class GameContainer;
 
@@ -52,4 +52,4 @@ public:
 };
 
 
-#endif //SDLOGL_GAMESTATE_H
+#endif //SHVRDENGINE_SRC_GAMESTATE_H

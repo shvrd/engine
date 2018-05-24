@@ -2,8 +2,8 @@
 // Created by thekatze on 06/02/18.
 //
 
-#ifndef SDLOGL_SPRITE_H
-#define SDLOGL_SPRITE_H
+#ifndef SHVRDENGINE_SRC_SPRITE_H
+#define SHVRDENGINE_SRC_SPRITE_H
 
 #include <GL/glew.h>
 #include <string>
@@ -40,4 +40,4 @@ public:
 };
 
 
-#endif //SDLOGL_SPRITE_H
+#endif //SHVRDENGINE_SRC_SPRITE_H

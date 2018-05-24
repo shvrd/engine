@@ -2,8 +2,8 @@
 // Created by thekatze on 04/04/18.
 //
 
-#ifndef SDLOGL_SHADER_H
-#define SDLOGL_SHADER_H
+#ifndef SHVRDENGINE_SRC_SHADER_H
+#define SHVRDENGINE_SRC_SHADER_H
 
 
 #include "GLSLProgram.h"
@@ -28,4 +28,4 @@ public:
 };
 
 
-#endif //SDLOGL_SHADER_H
+#endif //SHVRDENGINE_SRC_SHADER_H

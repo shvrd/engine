@@ -2,8 +2,8 @@
 // Created by thekatze on 07/02/18.
 //
 
-#ifndef SDLOGL_GLTEXTURE_H
-#define SDLOGL_GLTEXTURE_H
+#ifndef SHVRDENGINE_SRC_GLTEXTURE_H
+#define SHVRDENGINE_SRC_GLTEXTURE_H
 
 #include <GL/glew.h>
 
@@ -20,4 +20,4 @@ struct GLTexture {
     }
 };
 
-#endif //SDLOGL_GLTEXTURE_H
+#endif //SHVRDENGINE_SRC_GLTEXTURE_H

@@ -2,8 +2,8 @@
 // Created by thekatze on 31/01/18.
 //
 
-#ifndef SDLOGL_GAMECONTAINER_H
-#define SDLOGL_GAMECONTAINER_H
+#ifndef SHVRDENGINE_SRC_GAMECONTAINER_H
+#define SHVRDENGINE_SRC_GAMECONTAINER_H
 
 #include <vector>
 #include "Window.h"
@@ -62,4 +62,4 @@ public:
     const void setWindowTitle(std::string title);
 };
 
-#endif //SDLOGL_GAMECONTAINER_H
+#endif //SHVRDENGINE_SRC_GAMECONTAINER_H
