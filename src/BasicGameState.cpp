@@ -20,7 +20,7 @@ void BasicGameState::onEnter() {
 
     Logger::info("Entered Basic Gamestate");
 
-    testSprite = new Sprite(-1, -1, 2, 2, "../../Assets/devTile.png");
+    testSprite = new Sprite(50.0f, 50.0f, 400.0f, 150.0f, "../../Assets/devTile.png");
 
     basicShader = Shader::getDefaultShader();
 }
@@ -35,6 +35,9 @@ void BasicGameState::update(const int &delta, Input *input, GameContainer *gameC
 
 void BasicGameState::render(Graphics *graphics) {
     graphics->bindShader(basicShader);
+
+    graphics->getCamera()->translate({-1.f, 0.f});
+    graphics->getCamera()->setScale(graphics->getCamera()->getScale() + 0.003f);
 
     graphics->startSpriteBatch(testSprite);
     graphics->drawSprite(testSprite);

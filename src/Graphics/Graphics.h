@@ -9,6 +9,7 @@
 #include "GLTexture.h"
 #include "Sprite.h"
 #include "GLSLProgram.h"
+#include "Camera2D.h"
 
 /**
  * The Graphics wrapper used for drawing objects. This is a high level abstraction of OpenGL.
@@ -16,6 +17,7 @@
 class Graphics {
     GLSLProgram *currentGLSLProgram;
     GLTexture currentTexture;
+    Camera2D *camera;
 
 public:
     Graphics();
@@ -28,8 +30,11 @@ public:
 
     void drawSprite(Sprite *sprite);
 
-
     GLTexture getCurrentSpriteBatch() { return currentTexture; };
+
+    Camera2D *getCamera() {
+        return camera;
+    }
 };
 
 

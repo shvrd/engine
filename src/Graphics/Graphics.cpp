@@ -23,12 +23,17 @@ void Graphics::startSpriteBatch(Sprite *sprite) {
  * @param shader The shader to be bound.
  */
 void Graphics::bindShader(Shader *shader) {
+    if (this->currentGLSLProgram != nullptr)
+        this->currentGLSLProgram->unbind();
+
     this->currentGLSLProgram = shader->getGLSLProgram();
     this->currentGLSLProgram->bind();
 
-    //Bind uniform (shader)
-
-
+    //Add camera
+    glUniformMatrix4fv(currentGLSLProgram->getUniformLocation("projection"),
+                       1,
+                       GL_FALSE,
+                       &(camera->getCameraMatrix()[0][0]));
 }
 /*
 colorProgram.bind();
@@ -45,7 +50,7 @@ for (Sprite *sprite : sprites) {
 colorProgram.unbind();
  */
 
-Graphics::Graphics() {
+Graphics::Graphics() : camera(new Camera2D(1280, 960)){
     Logger::info("Initializing Graphics System");
 }
 
@@ -57,8 +62,6 @@ void Graphics::drawSprite(Sprite *sprite) {
     if (currentTexture.equals(sprite->getGLTexture())) {
         this->startSpriteBatch(sprite);
     }
-
-    glBindTexture(GL_TEXTURE_2D, sprite->getGLTexture().id);
 
     sprite->render();
 }
