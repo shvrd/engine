@@ -2,41 +2,41 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="shvrdengine_test" targetName="NightlyCoverage" />
-      <config projectName="shvrdengine_test" targetName="NightlyMemCheck" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalStart" />
-      <config projectName="shvrdengine_test" targetName="ContinuousUpdate" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalBuild" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalConfigure" />
-      <config projectName="shvrdengine_test" targetName="ContinuousConfigure" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalUpdate" />
-      <config projectName="shvrdengine_test" targetName="shvrdengine" />
-      <config projectName="shvrdengine_test" targetName="gmock" />
-      <config projectName="shvrdengine_test" targetName="NightlyStart" />
       <config projectName="shvrdengine_test" targetName="ContinuousMemCheck" />
-      <config projectName="shvrdengine_test" targetName="ContinuousTest" />
-      <config projectName="shvrdengine_test" targetName="NightlyMemoryCheck" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalMemCheck" />
-      <config projectName="shvrdengine_test" targetName="shvrdengine_exec" />
-      <config projectName="shvrdengine_test" targetName="gtest" />
-      <config projectName="shvrdengine_test" targetName="Continuous" />
-      <config projectName="shvrdengine_test" targetName="ContinuousSubmit" />
-      <config projectName="shvrdengine_test" targetName="ContinuousStart" />
-      <config projectName="shvrdengine_test" targetName="NightlyBuild" />
-      <config projectName="shvrdengine_test" targetName="runUnitTests" />
-      <config projectName="shvrdengine_test" targetName="ExperimentalCoverage" />
-      <config projectName="shvrdengine_test" targetName="NightlyUpdate" />
-      <config projectName="shvrdengine_test" targetName="gmock_main" />
+      <config projectName="shvrdengine_test" targetName="shvrdengine" />
+      <config projectName="shvrdengine_test" targetName="ContinuousConfigure" />
+      <config projectName="shvrdengine_test" targetName="NightlyConfigure" />
       <config projectName="shvrdengine_test" targetName="ExperimentalTest" />
-      <config projectName="shvrdengine_test" targetName="gtest_main" />
+      <config projectName="shvrdengine_test" targetName="shvrdengine_exec" />
+      <config projectName="shvrdengine_test" targetName="gmock" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalCoverage" />
+      <config projectName="shvrdengine_test" targetName="NightlyBuild" />
+      <config projectName="shvrdengine_test" targetName="NightlyCoverage" />
+      <config projectName="shvrdengine_test" targetName="Continuous" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalStart" />
       <config projectName="shvrdengine_test" targetName="ContinuousCoverage" />
-      <config projectName="shvrdengine_test" targetName="ContinuousBuild" />
+      <config projectName="shvrdengine_test" targetName="Experimental" />
+      <config projectName="shvrdengine_test" targetName="NightlyStart" />
+      <config projectName="shvrdengine_test" targetName="ContinuousUpdate" />
       <config projectName="shvrdengine_test" targetName="ExperimentalSubmit" />
       <config projectName="shvrdengine_test" targetName="NightlySubmit" />
-      <config projectName="shvrdengine_test" targetName="Nightly" />
-      <config projectName="shvrdengine_test" targetName="Experimental" />
-      <config projectName="shvrdengine_test" targetName="NightlyConfigure" />
       <config projectName="shvrdengine_test" targetName="NightlyTest" />
+      <config projectName="shvrdengine_test" targetName="NightlyUpdate" />
+      <config projectName="shvrdengine_test" targetName="ContinuousStart" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalBuild" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalConfigure" />
+      <config projectName="shvrdengine_test" targetName="gmock_main" />
+      <config projectName="shvrdengine_test" targetName="ContinuousBuild" />
+      <config projectName="shvrdengine_test" targetName="NightlyMemoryCheck" />
+      <config projectName="shvrdengine_test" targetName="gtest" />
+      <config projectName="shvrdengine_test" targetName="gtest_main" />
+      <config projectName="shvrdengine_test" targetName="ContinuousSubmit" />
+      <config projectName="shvrdengine_test" targetName="runUnitTests" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalMemCheck" />
+      <config projectName="shvrdengine_test" targetName="Nightly" />
+      <config projectName="shvrdengine_test" targetName="ContinuousTest" />
+      <config projectName="shvrdengine_test" targetName="NightlyMemCheck" />
+      <config projectName="shvrdengine_test" targetName="ExperimentalUpdate" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -46,14 +46,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d2e1c6-a325-4840-a95b-1f896dd9eb77" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Graphics/Camera2D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphics/Camera2D.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/basicShading.vert" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/basicShading.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasicGameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/Graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Graphics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/Graphics.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Graphics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/Camera2D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Camera2D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/Camera2D.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Camera2D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,17 +67,17 @@
       <file leaf-file-name="GameContainer.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameContainer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="2655">
               <caret line="177" column="49" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicGameState.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BasicGameState.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BasicGameState.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="585">
+              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
               <folding>
                 <element signature="e#43#62#0" expanded="true" />
               </folding>
@@ -87,14 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graphics.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/Graphics.h">
+      <file leaf-file-name="Camera2D.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/Camera2D.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding>
-                <element signature="e#114#133#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -102,11 +97,55 @@
       <file leaf-file-name="Camera2D.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/Camera2D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="495">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="e#114#136#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Input.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shader.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/Shader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding>
+                <element signature="e#111#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageLoader.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resources/ImageLoader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextureCache.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resources/TextureCache.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="TextureCache.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resources/TextureCache.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -132,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Util/Debugger/Memory.cpp" />
         <option value="$PROJECT_DIR$/src/Util/Debugger/Debugger.cpp" />
         <option value="$PROJECT_DIR$/src/Localization/Localizer.cpp" />
         <option value="$PROJECT_DIR$/src/Resources/TextureCache.cpp" />
@@ -155,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/Graphics/GLSLProgram.h" />
         <option value="$PROJECT_DIR$/src/Audio/Sound.h" />
         <option value="$PROJECT_DIR$/src/Graphics/GLTexture.h" />
-        <option value="$PROJECT_DIR$/src/Graphics/Shader.h" />
         <option value="$PROJECT_DIR$/src/Graphics/Sprite.h" />
         <option value="$PROJECT_DIR$/src/Graphics/Vertex.h" />
         <option value="$PROJECT_DIR$/src/Localization/LanguageCodes.h" />
@@ -177,12 +214,14 @@
         <option value="$PROJECT_DIR$/src/GameState.h" />
         <option value="$PROJECT_DIR$/src/Input.h" />
         <option value="$PROJECT_DIR$/src/Window.h" />
-        <option value="$PROJECT_DIR$/src/Graphics/Camera2D.cpp" />
         <option value="$PROJECT_DIR$/src/Graphics/Graphics.cpp" />
         <option value="$PROJECT_DIR$/Assets/Shaders/basicShading.vert" />
         <option value="$PROJECT_DIR$/src/Graphics/Graphics.h" />
+        <option value="$PROJECT_DIR$/src/Input.cpp" />
+        <option value="$PROJECT_DIR$/src/Graphics/Camera2D.cpp" />
         <option value="$PROJECT_DIR$/src/Graphics/Camera2D.h" />
         <option value="$PROJECT_DIR$/src/BasicGameState.cpp" />
+        <option value="$PROJECT_DIR$/src/Graphics/Shader.h" />
       </list>
     </option>
   </component>
@@ -210,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +287,12 @@
               <item name="shvrdengine_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="shvrdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shvrdengine_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shvrdengine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,6 +306,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +390,9 @@
       <workItem from="1527088364560" duration="3383000" />
       <workItem from="1527161457724" duration="2417000" />
       <workItem from="1527168153682" duration="9385000" />
-      <workItem from="1527234105790" duration="5388000" />
+      <workItem from="1527234105790" duration="6958000" />
+      <workItem from="1527332412490" duration="531000" />
+      <workItem from="1527529644897" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Unit Tests and updated Doxyfile">
       <created>1526590085249</created>
@@ -417,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527176650044</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="implemented camera">
+      <created>1527244866762</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1527244866762</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51004000" />
+    <option name="totallyTimeSpent" value="53737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,7 +527,8 @@
     <MESSAGE value="Simple Graphics work" />
     <MESSAGE value="Fixed unit tests" />
     <MESSAGE value="updated headers" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated headers" />
+    <MESSAGE value="implemented camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented camera" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -489,21 +544,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -647,24 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/ImageLoader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Resources/ResourceManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/TextureCache.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -738,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Window.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -780,20 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/Camera2D.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/Shader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/Sprite.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -810,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameContainer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="2655">
           <caret line="177" column="49" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="49" />
         </state>
       </provider>
@@ -829,32 +834,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Graphics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Input.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BasicGameState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Camera2D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/Camera2D.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="495">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="e#114#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/Graphics.h">
+    <entry file="file://$PROJECT_DIR$/src/Input.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#114#133#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasicGameState.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Resources/ImageLoader.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/TextureCache.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/TextureCache.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <element signature="e#43#62#0" expanded="true" />
+            <element signature="e#111#135#0" expanded="true" />
           </folding>
         </state>
       </provider>

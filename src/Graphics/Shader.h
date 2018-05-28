@@ -7,13 +7,15 @@
 
 
 #include "GLSLProgram.h"
+#include <map>
 
 /**
- * A wrapper for GLSLPrograms for use in the ResourceManager
+ * A wrapper for GLSLPrograms for simpler usage of uniform variables
  */
+
 class Shader {
     GLSLProgram *boundGLSLProgram;
-    // std::map<std::string, GLuint> uniforms;
+    std::map<std::string, GLuint> uniforms;
 
 public:
     Shader(std::string vertexShaderPath, std::string fragmentShaderPath);

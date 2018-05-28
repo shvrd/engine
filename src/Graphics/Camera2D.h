@@ -16,7 +16,7 @@ class Camera2D {
 
     int screenWidth, screenHeight;
 
-    float scale;
+    float scaleFactor;
 
     void update();
 public:
@@ -27,7 +27,11 @@ public:
         this->position.x = this->position.x + vector.x;
         this->position.y = this->position.y + vector.y;
         this->update();
-    };
+    }
+
+    void scale(float factor) {
+        this->scaleFactor *= factor;
+    }
 
     void setScreenDimensions(const Vector2 &newDimensions) {
         this->screenWidth = (int) newDimensions.x;
@@ -42,7 +46,7 @@ public:
     }
 
     void setScale(float newScale) {
-        this->scale = newScale;
+        this->scaleFactor = newScale;
         this->update();
     }
 
@@ -51,7 +55,7 @@ public:
     }
 
     float getScale() {
-        return this->scale;
+        return this->scaleFactor;
     }
 
     glm::mat4 getCameraMatrix() {

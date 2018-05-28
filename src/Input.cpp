@@ -27,9 +27,13 @@ void Input::update() {
                 isCloseRequested = true;
                 break;
             case SDL_KEYDOWN:
-                // event.key.keysym.sym;
-                // SDLK_k
-
+//                switch (event.key.keysym.sym) {
+//                    case SDLK_w:
+//
+//                        break;
+//                    default:
+//                        break;
+//                }
                 break;
             case SDL_MOUSEMOTION:
                 mouse.position.x = event.motion.x;
@@ -41,7 +45,6 @@ void Input::update() {
                 mouseMoved = true;
 
                 break;
-
             default:
                 break;
         }
