@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.3)
-project(shvrdengine_test)
+project(shvrdengine)
 
 set(CMAKE_CXX_STANDARD 11)
 

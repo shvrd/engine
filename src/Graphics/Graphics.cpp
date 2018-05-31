@@ -50,7 +50,7 @@ for (Sprite *sprite : sprites) {
 colorProgram.unbind();
  */
 
-Graphics::Graphics() : camera(new Camera2D(1280, 960)){
+Graphics::Graphics() : camera(new Camera2D(1280, 960)), currentGLSLProgram(nullptr) {
     Logger::info("Initializing Graphics System");
 }
 
