@@ -25,21 +25,22 @@ Written in c++ with platform independency in mind, this engine offers high perfo
 ## Installation
 
 As this engine still is in heavy development, there are no release verions yet. However, you can build it from source
-by cloning this repository following these steps:
+by cloning this repository following these steps:  
+Building from source on Windows requires a few extra steps, if you want to do so follow the instructions in INSTALL_WINDOWS.md before continuing.
 
 ### Install required development libraries
 
 The required development libraries are:
 
+* OpenGL
 * SDL2
-* SDL2_image
-* SDL2_mixer
+* OpenAL
 * glew
 * glm
 * boost
 * spdlog
 
-And of course OpenGL development libraries.
+These can be installed from the package manager of your Linux distribution, homebrew on Mac or (thanks for that) manually on Windows.
 
 ### Download "DownloadProject"
 
