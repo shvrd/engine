@@ -2,6 +2,8 @@
 // Created by thekatze on 04/04/18.
 //
 
+#include <vector>
+#include <algorithm>
 #include "Graphics.h"
 #include "../Util/Logger.h"
 
@@ -50,14 +52,25 @@ for (Sprite *sprite : sprites) {
 colorProgram.unbind();
  */
 
+/**
+ * The Constructor for the graphics subsystem. Initializes the camera and sets the currentGLSLProgram to nullptr.
+ */
+
 Graphics::Graphics() : camera(new Camera2D(1280, 960)), currentGLSLProgram(nullptr) {
     Logger::info("Initializing Graphics System");
 }
 
+/**
+ * Cleans up used resources.
+ */
 Graphics::~Graphics() {
     Logger::info("Shutting down Graphics System");
 }
 
+/**
+ * Draws a sprite at its location.
+ * @param sprite Pointer to the sprite to be drawn.
+ */
 void Graphics::drawSprite(Sprite *sprite) {
     if (currentTexture.equals(sprite->getGLTexture())) {
         this->startSpriteBatch(sprite);
@@ -65,3 +78,18 @@ void Graphics::drawSprite(Sprite *sprite) {
 
     sprite->render();
 }
+
+/**
+ * Draws a sprite array of the same type of sprites, while only setting the sprite texture once
+ * @param spriteArray The vector of sprites to be drawn.
+ */
+void Graphics::drawSpriteArray(std::vector<Sprite*> *spriteArray) {
+    if (currentTexture.equals(spriteArray->front()->getGLTexture())) {
+        this->startSpriteBatch(spriteArray->front());
+    }
+
+    for (unsigned long i = 0; i < spriteArray->size(); i++) {
+        spriteArray->at(i)->render();
+    }
+}
+

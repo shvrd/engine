@@ -29,6 +29,7 @@ public:
     void startSpriteBatch(Sprite *sprite);
 
     void drawSprite(Sprite *sprite);
+    void drawSpriteArray(std::vector<Sprite*> *spriteArray);
 
     GLTexture getCurrentSpriteBatch() { return currentTexture; };
 
