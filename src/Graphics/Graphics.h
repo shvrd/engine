@@ -5,6 +5,7 @@
 #ifndef SHVRDENGINE_SRC_GRAPHICS_H
 #define SHVRDENGINE_SRC_GRAPHICS_H
 
+#include <vector>
 #include "Shader.h"
 #include "GLTexture.h"
 #include "Sprite.h"
