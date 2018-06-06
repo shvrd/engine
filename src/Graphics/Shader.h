@@ -24,9 +24,10 @@ public:
 
     GLSLProgram *getGLSLProgram() { return this->boundGLSLProgram; }
 
-
-
     static Shader *getDefaultShader();
+
+    bool isCompiled() {return boundGLSLProgram->getCompileStatus() & ~GLSLProgram::SHADER_COMPILE_FAILED;}
+    bool isLinked() {return boundGLSLProgram->getCompileStatus() & GLSLProgram::COMPILE_SUCCESS;}
 };
 
 

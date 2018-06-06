@@ -9,7 +9,7 @@ Localizer::Localizer(LanguageCode language) : currentLanguage(language) {}
 Localizer::~Localizer() {}
 
 std::string Localizer::getText(std::string identifier) {
-    return std::__cxx11::string();
+    return std::string();
 }
 
 Sound Localizer::getSound(std::string identifier) {
