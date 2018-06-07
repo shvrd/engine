@@ -2,7 +2,8 @@
 // Created by thekatze on 21/03/18.
 //
 
-#include <iostream>
+#include <vector>
+
 #include "BasicGameState.h"
 
 #include "Util/Logger.h"
@@ -13,14 +14,21 @@ Debugger *debugger;
 
 Shader *basicShader;
 
-Sprite *testSprite;
+std::vector<Sprite*> *sprites;
 
 void BasicGameState::onEnter() {
     debugger = Debugger::getInstance();
 
     Logger::info("Entered Basic Gamestate");
 
-    testSprite = new Sprite(0.0f, 0.0f, 400.0f, 400.0f, "../../Assets/devTile.png");
+    sprites = new std::vector<Sprite*>;
+
+    for (int y = 0 ; y <= 10; y++) {
+
+        for (int x = 0 ; x <= 20; x++) {
+            sprites->push_back(new Sprite(x * 100, y * 100, 100, 100, "../../Assets/devTile.png"));
+        }
+    }
 
     basicShader = Shader::getDefaultShader();
 }
@@ -36,9 +44,11 @@ void BasicGameState::update(const int &delta, Input *input, GameContainer *gameC
 void BasicGameState::render(Graphics *graphics) {
     graphics->bindShader(basicShader);
 
-    graphics->getCamera()->translate({-0.f, 0.f});
-    graphics->getCamera()->scale(1.00001f);
+    Vector2 center = {1280/2, 960/2};
 
-    graphics->startSpriteBatch(testSprite);
-    graphics->drawSprite(testSprite);
+    graphics->getCamera()->setPosition(center.invert());
+    //graphics->getCamera()->setRotation(45.f);
+    //graphics->getCamera()->setPosition(center);
+
+    graphics->drawSpriteArray(sprites);
 }

@@ -56,7 +56,7 @@ colorProgram.unbind();
  * The Constructor for the graphics subsystem. Initializes the camera and sets the currentGLSLProgram to nullptr.
  */
 
-Graphics::Graphics() : camera(new Camera2D(1280, 960)), currentGLSLProgram(nullptr) {
+Graphics::Graphics() : currentTexture({0, 0, 0}), camera(new Camera2D(1280, 960)), currentGLSLProgram(nullptr) {
     Logger::info("Initializing Graphics System");
 }
 
@@ -72,7 +72,7 @@ Graphics::~Graphics() {
  * @param sprite Pointer to the sprite to be drawn.
  */
 void Graphics::drawSprite(Sprite *sprite) {
-    if (currentTexture.equals(sprite->getGLTexture())) {
+    if (!currentTexture.equals(sprite->getGLTexture())) {
         this->startSpriteBatch(sprite);
     }
 
@@ -84,11 +84,12 @@ void Graphics::drawSprite(Sprite *sprite) {
  * @param spriteArray The vector of sprites to be drawn.
  */
 void Graphics::drawSpriteArray(std::vector<Sprite*> *spriteArray) {
-    if (currentTexture.equals(spriteArray->front()->getGLTexture())) {
+    if (!currentTexture.equals(spriteArray->front()->getGLTexture())) {
+        Logger::info("Starting Spritebatch");
         this->startSpriteBatch(spriteArray->front());
     }
 
-    for (unsigned long i = 0; i < spriteArray->size(); i++) {
+    for (long i = 0; i < spriteArray->size(); i++) {
         spriteArray->at(i)->render();
     }
 }

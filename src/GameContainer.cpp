@@ -30,7 +30,6 @@ void GameContainer::render() {
 
     currentGameState->render(graphics);
 
-    glBindTexture(GL_TEXTURE_2D, 0);
     SDL_GL_SwapWindow(window->getWindow());
 }
 

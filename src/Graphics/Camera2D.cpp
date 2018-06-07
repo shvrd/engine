@@ -20,8 +20,13 @@ Camera2D::~Camera2D() {
 }
 
 void Camera2D::update() {
+
+    cameraMatrix = orthoMatrix;
+
+    cameraMatrix = glm::rotate(cameraMatrix, glm::radians(this->rotation), glm::vec3(0.f, 0.f, 1.f));
+
     glm::vec3 translationVector(-position.x, -position.y, 0.0f);
-    cameraMatrix = glm::translate(orthoMatrix, translationVector);
+    cameraMatrix = glm::translate(cameraMatrix, translationVector);
 
     glm::vec3 scaleVector(scaleFactor, scaleFactor, 0.0f);
     cameraMatrix = glm::scale(cameraMatrix, scaleVector);
