@@ -14,6 +14,10 @@ public:
         this->x = x;
         this->y = y;
     };
+
+    Vector2 invert() {
+        return {-this->x, -this->y};
+    }
 };
 
 

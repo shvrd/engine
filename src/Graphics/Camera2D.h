@@ -17,6 +17,7 @@ class Camera2D {
     int screenWidth, screenHeight;
 
     float scaleFactor;
+    float rotation;
 
     void update();
 public:
@@ -31,17 +32,29 @@ public:
 
     void scale(float factor) {
         this->scaleFactor *= factor;
+        this->update();
+    }
+
+    void rotate(const float deltaRotation) {
+        this->rotation += deltaRotation;
+        this->update();
     }
 
     void setScreenDimensions(const Vector2 &newDimensions) {
         this->screenWidth = (int) newDimensions.x;
         this->screenHeight = (int) newDimensions.y;
         this->orthoMatrix = glm::ortho(0.0f, (float)screenWidth,0.0f, (float)screenHeight);
+        this->update();
     }
 
     void setPosition(const Vector2 &newPosition) {
         this->position.x = newPosition.x;
         this->position.y = newPosition.y;
+        this->update();
+    }
+
+    void setRotation(const float newRotation) {
+        this->rotation = newRotation;
         this->update();
     }
 

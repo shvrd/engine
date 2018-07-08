@@ -9,7 +9,7 @@
 #include <fstream>
 #include <vector>
 
-GLSLProgram::GLSLProgram() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttributes(0) {}
+GLSLProgram::GLSLProgram() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttributes(0), compileStatus(0x00) {}
 
 GLSLProgram::~GLSLProgram() = default;
 
@@ -31,6 +31,8 @@ void GLSLProgram::compileShaders(const std::string &vertexShaderPath, const std:
     if (fragmentShaderID == 0) {
         Logger::error("Creating fragment shader failed.");
         Logger::terminate(Constants::STATUS_FAILED);
+
+        compileStatus |= FRAGMENT_SHADER_FAILED;
     }
 
     compileShader(vertexShaderPath, vertexShaderID);
@@ -42,7 +44,7 @@ void GLSLProgram::compileShaders(const std::string &vertexShaderPath, const std:
  */
 void GLSLProgram::linkShaders() {
     if (vertexShaderID == 0 || fragmentShaderID == 0) {
-        Logger::error("Shaders have no id, thus are not successfully compiled.");
+        Logger::error("Shaders have no id, thus shaders were not allocated.");
         return;
     }
 
@@ -67,11 +69,12 @@ void GLSLProgram::linkShaders() {
         Logger::error("Shaderprogram failed to link shaders");
         Logger::error(std::string(errorLog.begin(), errorLog.end()));
 
-
         //Prevent Leaking
         glDeleteProgram(programID);
         glDeleteShader(vertexShaderID);
         glDeleteShader(fragmentShaderID);
+    } else {
+        compileStatus |= COMPILE_SUCCESS;
     }
     //Detach Shaders after successful link
 
@@ -125,6 +128,17 @@ void GLSLProgram::compileShader(const std::string &filePath, GLuint shaderID) {
         Logger::error(std::string(errorLog.begin(), errorLog.end()));
         Logger::error("Shader failed to compile");
         glDeleteShader(shaderID);
+
+        compileStatus |= SHADER_COMPILE_FAILED;
+
+        if (shaderID == fragmentShaderID) {
+            compileStatus |= FRAGMENT_SHADER_FAILED;
+        }
+
+        if (shaderID == vertexShaderID) {
+            compileStatus |= VERTEX_SHADER_FAILED;
+        }
+
     }
 }
 

@@ -17,10 +17,16 @@ class GLSLProgram {
     GLuint fragmentShaderID;
 
     int numAttributes;
+    unsigned char compileStatus;
 
     void compileShader(const std::string &filePath, GLuint shaderID);
 
 public:
+    static const unsigned char VERTEX_SHADER_FAILED = 0x01;
+    static const unsigned char FRAGMENT_SHADER_FAILED = 0x02;
+    static const unsigned char SHADER_COMPILE_FAILED = 0x04;
+    static const unsigned char COMPILE_SUCCESS = 0x08;
+
     GLSLProgram();
 
     ~GLSLProgram();
@@ -36,6 +42,8 @@ public:
     void bind();
 
     void unbind();
+
+    unsigned char getCompileStatus() {return compileStatus;};
 };
 
 
