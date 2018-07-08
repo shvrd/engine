@@ -17,12 +17,12 @@ Download [pkgconfig-lite](https://sourceforge.net/projects/pkgconfiglite/) from 
 ## SDL2
 Download the [MinGW SDL2](https://www.libsdl.org/download-2.0.php) development library from its site and copy the contents of the `x86_64-w64-mingw32` folder into your MinGW folder.
 ## glm
-***NO SOLUTION YET***
+Just plonk the header files into the MinGW `include` folder.
 ## OpenAL
 Download the [OpenAL SDK](https://www.openal.org/downloads/) from its website and install it anywhere. Then copy the `include` folder from your OpenAL installation to your MinGW folder.
 ## glew
 Download the [glew Windows Binaries](http://glew.sourceforge.net/) from their site and copy the `include` folder of the archive into your MinGW folder.
 For the `lib` and `bin` folders, copy the contents of their `Release\Win64` folders into their respective MinGW folders.
 ## spdlog
-***NO SOLUTION YET***
+Just plonk the header files into the MinGW `include` folder.
 

@@ -18,11 +18,11 @@ IF(MINGW)
     INCLUDE(FindBoost)
     INCLUDE(FindOpenAL)
 
+    IF(${GLEW_FOUND})
+        MESSAGE("GLEW HAS BEEN FOUND")
+    ENDIF()
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
 
-    PKG_SEARCH_MODULE(GLM REQUIRED glm)
-
-    find_package(spdlog CONFIG REQUIRED)
     find_package(Threads)
 
 ELSEIF(APPLE)
@@ -60,7 +60,7 @@ ELSEIF(UNIX)
 
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
 
-    PKG_SEARCH_MODULE(GLM REQUIRED glm)
+    PKG_SREACH_MODULE(GLM REQUIRED glm)
 
     find_package(Threads)
     find_package(spdlog CONFIG REQUIRED)
