@@ -6,6 +6,20 @@
 
 #include <boost/predef.h>
 
+#if BOOST_OS_WINDOWS
+
+#include <windows.h>
+
+#elif BOOST_OS_LINUX
+
+
+
+#elif BOOST_OS_MACOS
+
+
+
+#endif
+
 static Debugger *instance;
 
 Debugger::Debugger() {
@@ -28,6 +42,14 @@ Debugger *Debugger::getInstance() {
     return instance;
 }
 
-// https://github.com/hyperic/sigar
+// https://stackoverflow.com/questions/63166/how-to-determine-cpu-and-memory-consumption-from-inside-a-process
 
-void Debugger::logRAM() {}
+void Debugger::logRAM() {
+#if BOOST_OS_WINDOWS
+
+#elif BOOST_OS_LINUX
+
+#elif BOOST_OS_MACOS
+
+#endif
+}
