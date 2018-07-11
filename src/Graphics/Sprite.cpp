@@ -22,6 +22,7 @@ Sprite::~Sprite() {
  * Draws this sprite at its current location
  */
 void Sprite::render() {
+
     glBindBuffer(GL_ARRAY_BUFFER, vboID);
 
     glEnableVertexAttribArray(0);

@@ -60,7 +60,7 @@ ELSEIF(UNIX)
 
     PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
 
-    PKG_SREACH_MODULE(GLM REQUIRED glm)
+    PKG_SEARCH_MODULE(GLM REQUIRED glm)
 
     find_package(Threads)
     find_package(spdlog CONFIG REQUIRED)

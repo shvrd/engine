@@ -46,9 +46,8 @@ void BasicGameState::render(Graphics *graphics) {
 
     Vector2 center = {1280/2, 960/2};
 
-    graphics->getCamera()->setPosition(center.invert());
-    //graphics->getCamera()->setRotation(45.f);
-    //graphics->getCamera()->setPosition(center);
+    graphics->getCamera()->rotate(.3f);
+
 
     graphics->drawSpriteArray(sprites);
 }
